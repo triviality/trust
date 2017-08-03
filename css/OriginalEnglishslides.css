@@ -1,7 +1,7 @@
 @font-face{
-	font-family: 'Katibeh-Regular';
+	font-family: 'FuturaHandwritten';
 	font-style: normal;
-	src: url('Katibeh-Regular.ttf') format('truetype');
+	src: url('FuturaHandwritten.ttf') format('truetype');
 }
 
 html,body{
@@ -16,10 +16,9 @@ body{
 
 	background: #fff;
 
-	font-family: 'Katibeh-Regular';
+	font-family: 'FuturaHandwritten';
 	color: #333;
-	font-size: 19px;
-	line-height: 1.5em;
+	font-size: 20px;
 
 }
 #preloader{
@@ -201,7 +200,7 @@ s{
 }
 .button #text{
 	
-	font-family: 'Katibeh-Regular';
+	font-family: 'FuturaHandwritten';
 	color: #000;
 	font-size: 24px;
 
