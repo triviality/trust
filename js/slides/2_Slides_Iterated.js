@@ -119,9 +119,9 @@ SLIDES.push({
 		var _showInfo = function(){
 			var infoWords = Words.get("iterated_info_1");
 			infoWords += "<br>";
-			infoWords += Words.get("iterated_info_2")+_.yourTotalScore;
-			infoWords = infoWords.replace(/\[X\]/g, (ROUND_INDEX+1)+"");
-			infoWords = infoWords.replace(/\[Y\]/g, (ROUNDS.length)+"");
+			infoWords += Words.get("iterated_info_2")+getArabicNumbers(_.yourTotalScore);
+			infoWords = infoWords.replace(/\[X\]/g, (getArabicNumbers(ROUND_INDEX+1))+"");
+			infoWords = infoWords.replace(/\[Y\]/g, (getArabicNumbers(ROUNDS.length))+"");
 			self.objects.info.setText(infoWords);
 		};
 
@@ -204,7 +204,6 @@ SLIDES.push({
 	}
 
 });
-
 // Show your SCORE: and the characters!
 SLIDES.push({
 
@@ -221,6 +220,7 @@ SLIDES.push({
 		else scoreTextID="x";
 		scoreTextID = "iterated_score_"+scoreTextID;
 
+
 		// Score text part 1
 		self.add({
 			id:"score1", type:"TextBox",
@@ -228,11 +228,13 @@ SLIDES.push({
 			text_id:"iterated_score_start"
 		});
 
+		var arabicScore = getArabicNumbers(_.yourTotalScore+"");
+
 		// Score
 		self.add({
 			id:"score2", type:"TextBox",
 			x:114, y:44, width:151, height:132, align:"right", size:123,
-			text: _.yourTotalScore+""
+			text: arabicScore //_.yourTotalScore+""
 		});
 
 		// Score text part 2

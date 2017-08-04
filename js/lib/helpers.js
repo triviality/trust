@@ -4,6 +4,26 @@ RANDOM CRAP TO MAKE MY LIFE EASIER
 
 **********************************/
 
+// Alex Clay. English-to-Arabic numbers translation
+var arabicNumbersMap =
+[
+"&\#1632;","&\#1633;","&\#1634;","&\#1635;","&\#1636;",
+"&\#1637;","&\#1638;","&\#1639;","&\#1640;","&\#1641;"
+];
+
+function getArabicNumbers(str)
+{
+	var newStr = "";
+	
+	str = String(str);
+	
+    for (i = 0; i < str.length; i +=1) {
+		newStr += arabicNumbersMap[parseInt(str.charAt(i))];
+	}
+	
+	return newStr;
+}
+
 // POLLUTE THIS NAMESPACE
 var _ = {};
 _.clear = function(){
