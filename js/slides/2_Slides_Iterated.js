@@ -114,7 +114,7 @@ SLIDES.push({
 		_.yourTotalScore = 0;
 		self.add({
 			id:"info", type:"TextBox",
-			x:378, y:60, width:200, height:50, align:"center", size:20
+			x:378, y:25, width:200, height:50, align:"center", size:20
 		});
 		var _showInfo = function(){
 			var infoWords = Words.get("iterated_info_1");
