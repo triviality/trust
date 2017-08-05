@@ -411,11 +411,11 @@ s{
 }
 #scoreboard > div:nth-child(1){
 	left: 20px;
-    top: 21px;
+    top: 29px;
 }
 #scoreboard > div:nth-child(2){
 	right: 15px;
-    top: 21px;
+    top: 29px;
 }
 
 /*************************/
