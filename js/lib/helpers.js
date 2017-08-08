@@ -14,12 +14,20 @@ var arabicNumbersMap =
 function getArabicNumbers(str)
 {
 	var newStr = "";
-	
+
 	str = String(str);
 	
-    for (i = 0; i < str.length; i +=1) {
-		newStr += arabicNumbersMap[parseInt(str.charAt(i))];
+	if (str[0] == "-"){
+		newStr += "-";
 	}
+
+    for (i = 0; i < str.length; i +=1) {
+
+		if (arabicNumbersMap[parseInt(str.charAt(i))] != undefined) {
+			newStr += arabicNumbersMap[parseInt(str.charAt(i))];
+		}
+	}
+
 	
 	return newStr;
 }
