@@ -19,6 +19,8 @@ function getArabicNumbers(str)
 	
 	if (str[0] == "-"){
 		newStr += "-";
+	} else if (str[0] == "+"){
+		newStr += "+";
 	}
 
     for (i = 0; i < str.length; i +=1) {

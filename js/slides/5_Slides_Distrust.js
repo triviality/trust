@@ -24,12 +24,12 @@ SLIDES.push({
 		_.resetTournament();
 
 		// Move tournament
-		o.tournament.dom.style.left = 480;
+		o.tournament.dom.style.left = 0; // 480
 
 		// Words to the side
 		self.add({
 			id:"text", type:"TextBox",
-			x:0, y:30, width:450, height:500,
+			x:480, y:30, width:450, height:500, align:"right",
 			text_id:"distrust_1"
 		});
 		_hide(o.text); _fadeIn(o.text, 600);
@@ -38,7 +38,7 @@ SLIDES.push({
 		// BUTTONS for playing //////////////////
 		/////////////////////////////////////////
 
-		var x = 671;
+		var x = 671-480;
 		var y = 175;
 		var dy = 70;
 		self.add({
@@ -96,15 +96,15 @@ SLIDES.push({
 		_hide(o.text); _fadeIn(o.text, 100);
 
 		// Slider Label & Slider
-		var x = 0;
+		var x = 480;
 		var y = 350;
 		self.add({
-			id:"roundsLabel", type:"TextBox",
-			x:0, y:y, width:450, size:25, noSelect:true
+			id:"roundsLabel", type:"TextBox", align: "right",
+			x:x, y:y, width:450, size:25, noSelect:true
 		});
 		self.add({
 			id:"roundsSlider", type:"Slider",
-			x:0, y:y+30, width:450,
+			x:x, y:y+30, width:450,
 			min:1, max:20, step:1,
 			message: "rules/turns"
 		});
@@ -129,17 +129,17 @@ SLIDES.push({
 		});
 		var _showContinue = function(){
 			_showContinue = null;
-			var x = 125;
+			//var x = 820;
 			var y = 430;
 			self.add({
-				id:"continueLabel", type:"TextBox",
-				x:x, y:y+5, width:200, height:50,
+				id:"continueLabel", type:"TextBox", align: "right",
+				x:730, y:y+5, width:200, height:50,
 				align:"right", color:"#aaa", size:17,
 				text_id:"distrust_2_end"
 			});
 			self.add({
 				id:"continueButton", type:"Button",
-				x:x+215, y:y, size:"short",
+				x:640, y:y, size:"short",
 				text_id:"label_continue",
 				message: "slideshow/next"
 			});

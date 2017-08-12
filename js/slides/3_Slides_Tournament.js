@@ -23,7 +23,7 @@ SLIDES.push({
 		// Words to the side
 		self.add({
 			id:"text", type:"TextBox",
-			x:510, y:30, width:450, height:500,
+			x:510, y:30, width:450, height:500, align:"right",
 			text_id:"place_your_bets"
 		});
 
@@ -81,7 +81,7 @@ SLIDES.push({
 		// "First Match" Button
 		self.add({
 			id:"button", type:"Button",
-			x:510, y:130, 
+			x:770, y:130, 
 			text_id:"first_match",
 			message: "slideshow/next"
 		});
@@ -101,10 +101,10 @@ SLIDES.push({
 
 		// Words to the side
 		self.add({
-			id:"text_extra", type:"TextBox",
+			id:"text_extra", type:"TextBox", align:"right",
 			x:510, y:230, width:450, height:500
 		});
-
+		
 		var showTournament = function(num){
 
 			var words = "";
@@ -120,7 +120,7 @@ SLIDES.push({
 
 			// Match N: [A] versus [B]
 			match_header = Words.get("match_header_1");
-			match_header = match_header.replace(/\[N\]/g, (num+1)+"");
+			match_header = match_header.replace(/\[N\]/g, (getArabicNumbers(num+1))+"");
 			match_header = match_header.replace(/\[A\]/g, "<span class='"+charA+"'>"+Words.get("label_"+charA)+"</span>");
 			match_header = match_header.replace(/\[B\]/g, "<span class='"+charB+"'>"+Words.get("label_"+charB)+"</span>");
 			words += match_header+"<br>";
@@ -141,8 +141,8 @@ SLIDES.push({
 			if(scoreA>0) scoreA="+"+scoreA;
 			if(scoreB>0) scoreB="+"+scoreB;
 			match_header = Words.get("match_header_3");
-			match_header = match_header.replace(/\[A\]/g, "<span class='"+charA+"'>"+scoreA+"</span>");
-			match_header = match_header.replace(/\[B\]/g, "<span class='"+charB+"'>"+scoreB+"</span>");
+			match_header = match_header.replace(/\[A\]/g, "<span class='"+charA+"'>"+getArabicNumbers(scoreA)+"</span>");
+			match_header = match_header.replace(/\[B\]/g, "<span class='"+charB+"'>"+getArabicNumbers(scoreB)+"</span>");
 			words += match_header+"<br><br><br>";
 
 			// PUT IN THE WORDS
@@ -166,7 +166,7 @@ SLIDES.push({
 		// "Next Match" Button
 		self.add({
 			id:"button", type:"Button",
-			x:510, y:420, size:"long",
+			x:610, y:420, size:"long",
 			text_id:"next_match",
 			onclick:function(){
 				_matchNumber++;

@@ -1,13 +1,14 @@
 @font-face{
-	font-family: 'FuturaHandwritten';
+	font-family: 'Katibeh-Regular';
 	font-style: normal;
-	src: url('../css/FuturaHandwritten.ttf') format('truetype');
+	src: url('../css/Katibeh-Regular.ttf') format('truetype');
 }
 
 body{
 	background: #fff;
-	font-family: "FuturaHandwritten";
+	font-family: "Katibeh-Regular";
 	font-size: 20px;
+	text-align: right;
 	color: #222;
 	margin: 0;
 }
