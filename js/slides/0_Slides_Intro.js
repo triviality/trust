@@ -72,8 +72,8 @@ SLIDES.push({
 			active:false
 		});
 		var _loadingWords = function(ratio){
-			ratio = Math.round(ratio*100);
-			o.loading_button.setText2(Words.get("loading")+" "+ratio+"%");
+			ratio = getArabicNumbers(Math.round(ratio*100));
+			o.loading_button.setText2(Words.get("loading") +" "+ratio + "%");
 		};
 
 		// PRELOADER

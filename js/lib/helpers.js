@@ -17,11 +17,6 @@ function getArabicNumbers(str)
 
 	str = String(str);
 	
-	if (str[0] == "-"){
-		newStr += "-";
-	} else if (str[0] == "+"){
-		newStr += "+";
-	}
 
     for (i = 0; i < str.length; i +=1) {
 
@@ -29,7 +24,12 @@ function getArabicNumbers(str)
 			newStr += arabicNumbersMap[parseInt(str.charAt(i))];
 		}
 	}
-
+	
+	if (str[0] == "-"){
+		newStr += "-";
+	} else if (str[0] == "+"){
+		newStr += "+";
+	}
 	
 	return newStr;
 }

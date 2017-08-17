@@ -37,6 +37,7 @@ function Button(config){
 	text.id = "text";
 	var hitbox = document.createElement("div");
 	hitbox.id = "hitbox";
+	hitbox.style.left = 0;
 	button.appendChild(bg);
 	button.appendChild(text);
 	button.appendChild(hitbox);
