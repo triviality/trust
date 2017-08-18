@@ -237,14 +237,14 @@ SLIDES.push({
 		// Score
 		self.add({
 			id:"score2", type:"TextBox",
-			x:780, y:50, width:151, height:132, size:123,
+			x:710, y:50, width:151, height:132, size:123,
 			text: arabicScore //_.yourTotalScore+""
 		});
 
 		// Score text part 2
 		self.add({
 			id:"score3", type:"TextBox",
-			x:20, y:0, width:639, height:123, align:"right",
+			x:20, y:30, width:639, height:123, align:"right",
 			text: Words.get(scoreTextID)+" "+Words.get("iterated_score_end")+"<br><br>"+Words.get("who_were")
 		});
 
@@ -283,7 +283,7 @@ SLIDES.push({
 		// Next...
 		self.add({
 			id:"next", type:"TextBox",
-			x:604, y:478, width:447, height:37,
+			x:390, y:478, width:447, height:37,
 			text_id: "characters_teaser"
 		});//
 

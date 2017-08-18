@@ -14,7 +14,7 @@ function SandboxUI(config){
 	/////////////////////////////////////////
 
 	var playButton = new Button({
-		x:172, y:135, text_id:"label_start", size:"short",
+		x:-788, y:135, text_id:"label_start", size:"short",
 		onclick: function(){
 			if(slideshow.objects.tournament.isAutoPlaying){
 				publish("tournament/autoplay/stop");
@@ -32,11 +32,11 @@ function SandboxUI(config){
 	dom.appendChild(playButton.dom);
 
 	var stepButton = new Button({
-		x:172, y:135+70, text_id:"label_step", message:"tournament/step", size:"short"
+		x:-788, y:135+70, text_id:"label_step", message:"tournament/step", size:"short"
 	});
 	dom.appendChild(stepButton.dom);
 	
-	var resetButton = new Button({x:172, y:135+70*2, text_id:"label_reset", message:"tournament/reset", size:"short"});
+	var resetButton = new Button({x:-788, y:135+70*2, text_id:"label_reset", message:"tournament/reset", size:"short"});
 	dom.appendChild(resetButton.dom);
 
 	/////////////////////////////////////////
@@ -67,9 +67,9 @@ function SandboxUI(config){
 		})(pageIndex);
 
 	};
-	_makeHitbox(Words.get("label_population"), 30, 100, 0);
-	_makeHitbox(Words.get("label_payoffs"), 220, 100, 1);
-	_makeHitbox(Words.get("label_rules"), 366, 100, 2);
+	_makeHitbox(Words.get("label_population"), 60, 100, 0);
+	_makeHitbox(Words.get("label_payoffs"), 200, 100, 1);
+	_makeHitbox(Words.get("label_rules"), 335, 100, 2);
 
 	// Pages
 	var pages = [];
@@ -133,11 +133,11 @@ function SandboxUI(config){
 		// Label: Amount
 		var popAmount = document.createElement("div");
 		popAmount.className = "sandbox_pop_label";
-		popAmount.style.textAlign = "right";
+		popAmount.style.textAlign = "left";
 		popAmount.style.color = PEEP_METADATA[peepID].color;
 		popDOM.appendChild(popAmount);
 		listen(self, message, function(value){
-			popAmount.innerHTML = value;
+			popAmount.innerHTML = getArabicNumbers(value);
 		});
 
 		// Slider
@@ -343,7 +343,7 @@ function SandboxUI(config){
 	slider_turns.slideshow = self.slideshow;
 	listen(self, "rules/turns",function(value){
 		var words = (value==1) ? Words.get("sandbox_rules_1_single") : Words.get("sandbox_rules_1"); // plural?
-		words = words.replace(/\[N\]/g, value+""); // replace [N] with the number value
+		words = words.replace(/\[N\]/g, getArabicNumbers(value)+""); // replace [N] with the number value
 		rule_turns.innerHTML = words;
 	});
 	page.appendChild(rule_turns);
@@ -360,7 +360,7 @@ function SandboxUI(config){
 	slider_evolution.slideshow = self.slideshow;
 	listen(self, "rules/evolution",function(value){
 		var words = (value==1) ? Words.get("sandbox_rules_2_single") : Words.get("sandbox_rules_2"); // plural?
-		words = words.replace(/\[N\]/g, value+""); // replace [N] with the number value
+		words = words.replace(/\[N\]/g, getArabicNumbers(value)+""); // replace [N] with the number value
 		rule_evolution.innerHTML = words;
 	});
 	page.appendChild(rule_evolution);
@@ -378,7 +378,7 @@ function SandboxUI(config){
 	listen(self, "rules/noise",function(value){
 		value = Math.round(value*100);
 		var words = Words.get("sandbox_rules_3");
-		words = words.replace(/\[N\]/g, value+""); // replace [N] with the number value
+		words = words.replace(/\[N\]/g, getArabicNumbers(value)+""); // replace [N] with the number value
 		rule_noise.innerHTML = words;
 	});
 	page.appendChild(rule_noise);

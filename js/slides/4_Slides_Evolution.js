@@ -16,7 +16,7 @@ SLIDES.push({
 		});
 		self.add({
 			id:"text2", type:"TextBox",
-			x:0, y:235, width:287, height:117, align:"center",
+			x:669, y:235, width:287, height:117, align:"center",
 			text_id:"evolution_intro_1"
 		});
 		self.add({
@@ -26,7 +26,7 @@ SLIDES.push({
 		});
 		self.add({
 			id:"text4", type:"TextBox",
-			x:669, y:235, width:287, height:117, align:"center",
+			x:0, y:235, width:287, height:117, align:"center",
 			text_id:"evolution_intro_3"
 		});
 		self.add({

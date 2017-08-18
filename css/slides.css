@@ -279,7 +279,7 @@ s{
 
 #sandbox_tabs{
 	position: absolute;
-	left: 460px; top:-10px;
+	left: -460px; top:-10px;
 	background: url(../assets/ui/sandbox_tabs.png);
 	width:500px; height:470px;
 	background-size: auto 100%;
@@ -368,14 +368,15 @@ s{
 .sandbox_pop_icon{
 	width: 40px;
 	height: 40px;
+	left: 160px;
 	background: url(../assets/ui/sandbox_hats.png);
 	background-size: auto 100%;
 }
 .sandbox_pop_label{
 	font-size: 18px;
-    width: 150px;
+    width: 140px;
     top: 8px;
-    left: 50px;
+    left: 15px;
 }
 
 /*************************/

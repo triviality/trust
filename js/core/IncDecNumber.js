@@ -36,7 +36,7 @@ function IncDecNumber(config){
 
 		// Value & UI
 		self.value = value;
-		num.innerHTML = (self.value>0) ? "+"+self.value : self.value;
+		num.innerHTML = getArabicNumbers((self.value>0) ? "+"+self.value : self.value);
 
 	};
 	self.setValue(config.value);

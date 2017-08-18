@@ -111,7 +111,7 @@ SLIDES.push({
 		_.misc = {};
 		var _updateLabel = function(value){
 			var words = (value==1) ? Words.get("sandbox_rules_1_single") : Words.get("sandbox_rules_1"); // plural?
-			words = words.replace(/\[N\]/g, value+""); // replace [N] with the number value
+			words = words.replace(/\[N\]/g, getArabicNumbers(value)+""); // replace [N] with the number value
 			o.roundsLabel.setText("<b>"+words+"</b>");
 		};
 		listen(_.misc, "rules/turns", function(value){
@@ -171,7 +171,7 @@ SLIDES.push({
 		// Worse...
 		self.add({
 			id:"next", type:"Button",
-			x:0, y:450, size:"long",
+			x:550, y:450, size:"long",
 			text_id:"distrust_3_btn",
 			message: "slideshow/next"
 		});
@@ -194,7 +194,7 @@ SLIDES.push({
 		// Words
 		self.add({
 			id:"text", type:"TextBox",
-			x:0, y:0, width:450, height:500,
+			x:500, y:0, width:450, height:500,
 			text_id:"distrust_4"
 		});
 		_hide(o.text); _fadeIn(o.text, 100);
@@ -202,7 +202,7 @@ SLIDES.push({
 		// PAYOFFS
 		self.add({
 			id:"payoffs", type:"PayoffsUI",
-			x:105, y:73, scale:0.8, slideshow:self
+			x:600, y:73, scale:0.8, slideshow:self
 		});
 		_hide(o.payoffs); _fadeIn(o.payoffs, 300);
 		listen(_.misc, "payoffs/onchange", function(value){
@@ -212,7 +212,7 @@ SLIDES.push({
 		// More words
 		self.add({
 			id:"text2", type:"TextBox",
-			x:0, y:320, width:450, height:500,
+			x:500, y:320, width:450, height:500,
 			text_id:"distrust_4_2"
 		});
 		_hide(o.text2); _fadeIn(o.text2, 500);
@@ -222,13 +222,13 @@ SLIDES.push({
 			_showContinue = null;
 			self.add({
 				id:"continueLabel", type:"TextBox",
-				x:0, y:480, width:320, 
+				x:635, y:480, width:320, 
 				align:"right", color:"#aaa", size:17,
 				text_id:"distrust_4_note"
 			});
 			self.add({
 				id:"continueButton", type:"Button",
-				x:340, y:471, size:"short",
+				x:510, y:471, size:"short",
 				text_id:"label_continue",
 				message: "slideshow/next"
 			});
@@ -242,7 +242,7 @@ SLIDES.push({
 		// Note 2
 		self.add({
 			id:"note2", type:"TextBox",
-			x:583, y:510, width:300, height:50,
+			x:100, y:510, width:300, height:50,
 			align:"center", color:"#aaa", size:17,
 			text_id:"distrust_4_note_2"
 		});
@@ -280,7 +280,7 @@ SLIDES.push({
 		// Words
 		self.add({
 			id:"text", type:"TextBox",
-			x:0, y:30, width:450, height:500,
+			x:500, y:30, width:450, height:500,
 			text_id:"distrust_5"
 		});
 		_hide(o.text); _fadeIn(o.text, 100);
@@ -288,7 +288,7 @@ SLIDES.push({
 		// Worse...
 		self.add({
 			id:"next", type:"Button",
-			x:0, y:450, size:"long",
+			x:550, y:450, size:"long",
 			text_id:"distrust_5_btn",
 			message: "slideshow/scratch"
 		});
