@@ -1,4 +1,4 @@
-Tournament.resetGlobalVariables = function(){
+﻿Tournament.resetGlobalVariables = function(){
 
 	Tournament.SELECTION = 5;
 	Tournament.NUM_TURNS = 10;
@@ -604,7 +604,7 @@ function TournamentAgent(config){
 
 	// Score!
 	var textStyle = new PIXI.TextStyle({
-	    fontFamily: "FuturaHandwritten",
+	    fontFamily: "Katibeh-Regular",
 	    fontSize: 16,
 	    fill: "#444"
 	});
@@ -613,7 +613,8 @@ function TournamentAgent(config){
 	g.addChild(scoreText);
 	self.updateScore = function(){
 		scoreText.visible = true;
-		scoreText.text = self.coins;
+		//scoreText.text = self.coins;
+		scoreText.text = getArabicNumbersJS(self.coins);
 	};
 	self.updateScore();
 	scoreText.visible = false;

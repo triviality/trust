@@ -1,4 +1,4 @@
-/**********************************
+﻿/**********************************
 
 RANDOM CRAP TO MAKE MY LIFE EASIER
 
@@ -33,6 +33,35 @@ function getArabicNumbers(str)
 	
 	return newStr;
 }
+
+var arabicNumbersMapJS =
+[
+"٠","١","٢","٣","٤",
+"٥","٦","٧","٨","٩"
+];
+function getArabicNumbersJS(str)
+{
+	var newStr = "";
+
+	str = String(str);
+	
+
+    for (i = 0; i < str.length; i +=1) {
+
+		if (arabicNumbersMapJS[parseInt(str.charAt(i))] != undefined) {
+			newStr += arabicNumbersMapJS[parseInt(str.charAt(i))];
+		}
+	}
+	
+	if (str[0] == "-"){
+		newStr += "-";
+	} else if (str[0] == "+"){
+		newStr += "+";
+	}
+	
+	return newStr;
+}
+
 
 // POLLUTE THIS NAMESPACE
 var _ = {};

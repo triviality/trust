@@ -68,7 +68,7 @@ function SandboxUI(config){
 
 	};
 	_makeHitbox(Words.get("label_population"), 60, 100, 0);
-	_makeHitbox(Words.get("label_payoffs"), 200, 100, 1);
+	_makeHitbox(Words.get("label_payoffs"), 207, 100, 1);
 	_makeHitbox(Words.get("label_rules"), 335, 100, 2);
 
 	// Pages

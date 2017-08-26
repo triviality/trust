@@ -5,42 +5,42 @@ SLIDES.push({
 		// WORDS
 		self.add({
 			id:"text1", type:"TextBox",
-			x:3, y:6, width:800,
+			x:136, y:6, width:800,
 			text_id:"conclusion_0"
 		});
 		self.add({
 			id:"text2", type:"TextBox",
-			x:176, y:65-10, width:760, size:30, color:"#4089DD",
+			x:30, y:65-10, width:760, size:30, color:"#4089DD",
 			text_id:"conclusion_1_a"
 		});
 		self.add({
 			id:"text3", type:"TextBox",
-			x:176, y:115-10, width:760,
+			x:30, y:115-10, width:760,
 			text_id:"conclusion_1_a2"
 		});
 		self.add({
 			id:"text4", type:"TextBox",
-			x:176, y:192-10, width:760, size:30, color:"#efc701",
+			x:30, y:192-10, width:760, size:30, color:"#efc701",
 			text_id:"conclusion_2_a"
 		});
 		self.add({
 			id:"text5", type:"TextBox",
-			x:176, y:242-10, width:760,
+			x:30, y:242-10, width:760,
 			text_id:"conclusion_2_a2"
 		});
 		self.add({
 			id:"text6", type:"TextBox",
-			x:176, y:316-10, width:760, size:30, color:"#DD4040",
+			x:30, y:316-10, width:760, size:30, color:"#DD4040",
 			text_id:"conclusion_3_a"
 		});
 		self.add({
 			id:"text7", type:"TextBox",
-			x:176, y:366-10, width:760,
+			x:30, y:366-10, width:760,
 			text_id:"conclusion_3_a2"
 		});
 		self.add({
 			id:"text8", type:"TextBox",
-			x:74, y:440, width:520, align:"right",
+			x:390, y:440, width:550, align:"right",
 			text_id:"conclusion_4"
 		});
 
@@ -48,12 +48,12 @@ SLIDES.push({
 		self.add({
 			id:"img", type:"ImageBox",
 			src: "assets/conclusion/summary.png",
-			x:10, y:60, width:140, height:350
+			x:800, y:60, width:140, height:350
 		});
 
 		// Button
 		self.add({
-			id:"button", type:"Button", x:615, y:481, 
+			id:"button", type:"Button", x:20, y:442, 
 			text_id:"conclusion_btn", size:"long",
 			message:"slideshow/scratch"
 		});
@@ -79,7 +79,7 @@ SLIDES.push({
 
 		// Button
 		self.add({
-			id:"button", type:"Button", x:385, y:466, 
+			id:"button", type:"Button", x:385, y:370, 
 			text_id:"outro_1_btn",
 			message:"slideshow/next"
 		});

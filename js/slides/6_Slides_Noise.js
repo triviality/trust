@@ -463,7 +463,7 @@ SLIDES.push({
 		var _updateLabel = function(value){
 			value = Math.round(value*100);
 			var words = Words.get("sandbox_rules_3");
-			words = words.replace(/\[N\]/g, value+""); // replace [N] with the number value
+			words = words.replace(/\[N\]/g, getArabicNumbers(value)+""); // replace [N] with the number value
 			o.noiseLabel.setText("<i>"+words+"</i>");
 		};
 		listen(_.misc, "rules/noise", function(value){
