@@ -5,8 +5,9 @@
 
 #	PLAY IT HERE [ARABIC]: [https://mudaraljundi.github.io/trust/](https://mudaraljundi.github.io/trust/)
 
-ترجمت للعربية من قبل ألعاب ألكس و عبدالله قيشاوي  
-https://twitter.com/_AlexanderClay
+ترجمت للعربية من قبل   
+https://twitter.com/_AlexanderClay ألعاب ألكس  
+https://twitter.com/vEonz191 وعبدالله قيشاوي
 
 PLAY IT HERE [ENGLISH]: [http://ncase.me/trust/](http://ncase.me/trust/)  
 
