@@ -4,13 +4,16 @@
 !["The Evolution of Trust"](https://i.imgur.com/kde760y.png)
 
 #	PLAY IT HERE [ARABIC]: [https://mudaraljundi.github.io/trust/](https://mudaraljundi.github.io/trust/)
-PLAY IT HERE [ENGLISH]: [http://ncase.me/trust/](http://ncase.me/trust/)
+# PLAY IT HERE [ENGLISH]: [http://ncase.me/trust/](http://ncase.me/trust/)
 
-ترجمت للعربية من قبل   
-https://twitter.com/_AlexanderClay ألعاب ألكس  
-https://twitter.com/vEonz191 وعبدالله قيشاوي
+## ترجمت للعربية من قبل  
+ألعاب ألكس  
+https://twitter.com/_AlexanderClay  
+وعبدالله قيشاوي  
+https://twitter.com/vEonz191
 
-تعديلات
+## تعديلات  
+آدم زهران
 http://lordadamson.github.io
 
 
