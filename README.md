@@ -1,5 +1,5 @@
 
-# تطور الثقة و الأمانة، النسخة العربية  
+# النسخة العربية من "تطور الثقة"  
 
 !["The Evolution of Trust"](https://i.imgur.com/kde760y.png)
 
