@@ -3,7 +3,7 @@
 
 !["The Evolution of Trust"](https://i.imgur.com/kde760y.png)
 
-#	PLAY IT HERE [ARABIC]: [https://mudaraljundi.github.io/trust/](https://mudaraljundi.github.io/trust/)
+#	PLAY IT HERE [ARABIC]: [https://triviality.github.io/trust/](https://mudaraljundi.github.io/trust/)
 # PLAY IT HERE [ENGLISH]: [http://ncase.me/trust/](http://ncase.me/trust/)
 
 ## ترجمة 
