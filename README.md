@@ -6,7 +6,7 @@
 #	PLAY IT HERE [ARABIC]: [https://mudaraljundi.github.io/trust/](https://mudaraljundi.github.io/trust/)
 # PLAY IT HERE [ENGLISH]: [http://ncase.me/trust/](http://ncase.me/trust/)
 
-## ترجمت للعربية من قبل  
+## ترجمة 
 ألعاب ألكس  
 https://twitter.com/_AlexanderClay  
 وعبدالله قيشاوي  
@@ -15,7 +15,9 @@ https://twitter.com/vEonz191
 ## تعديلات  
 آدم زهران  
 http://lordadamson.github.io
-
+## تنقيح
+بوريطش الحكماء
+http://triviality.github.io/
 #
 *The Evolution of Trust* is dedicated to the public domain, and is made thanks to the many Creative Commons & open source resources out there! Here is a full list of music, sounds, and code used:
 
