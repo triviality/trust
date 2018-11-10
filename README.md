@@ -3,7 +3,7 @@
 
 !["The Evolution of Trust"](https://i.imgur.com/kde760y.png)
 
-#	PLAY IT HERE [ARABIC]: [https://triviality.github.io/trust/](https://mudaraljundi.github.io/trust/)
+#	PLAY IT HERE [ARABIC]: [https://triviality.github.io/trust/](https://triviality.github.io/trust/)
 # PLAY IT HERE [ENGLISH]: [http://ncase.me/trust/](http://ncase.me/trust/)
 
 ## ترجمة 
@@ -16,7 +16,9 @@ https://twitter.com/vEonz191
 آدم زهران  
 http://lordadamson.github.io
 ## تنقيح
-بوريطش الحكماء
+
+*بوريطش الحكماء*
+
 http://triviality.github.io/
 #
 *The Evolution of Trust* is dedicated to the public domain, and is made thanks to the many Creative Commons & open source resources out there! Here is a full list of music, sounds, and code used:
